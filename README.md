@@ -1,6 +1,8 @@
 # gas_detector_app
 
-A new Flutter application.
+Gas Detector App Using NodeMcu And Flutter.
+
+## Screenshot
 
 ## Getting Started
 
