@@ -6,6 +6,8 @@ NodeMcu Project can be found [HERE](https://github.com/mohamedamara/gas_detector
 
 ## Screenshot
 
+<img src="screenshot/gas_detector_app.gif" width="307" height="512" >
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
