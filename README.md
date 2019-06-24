@@ -4,6 +4,8 @@ Gas Detector App Using NodeMcu And Flutter.
 
 NodeMcu Project can be found [HERE](https://github.com/mohamedamara/gas_detector_nodemcu)
 
+The Animation used in this project from [Flare](https://www.2dimensions.com/about-flare)
+
 ## Screenshot
 
 <img src="screenshot/gas_detector_app.gif" width="307" height="512" >
