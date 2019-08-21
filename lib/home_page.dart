@@ -24,11 +24,11 @@ class _HomePageState extends State<HomePage> {
         _error = null;
         if (event.snapshot.value == 'no') {
           _appBarColor = Colors.green;
-          _gasStatus = 'Tout va bien';
+          _gasStatus = 'Everything is ok';
           _animationName = 'success';
         } else if (event.snapshot.value == 'yes') {
           _appBarColor = Colors.red;
-          _gasStatus = 'Gaz détecté';
+          _gasStatus = 'Gas detected';
           _animationName = 'fail';
         }
       });
@@ -49,45 +49,25 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: _appBarColor ?? Colors.green,
-        title: Text('Gas Detector App'),
+        title: Text(_gasStatus ?? "Gas Detector App"),
         centerTitle: true,
       ),
-      body: Stack(
-        children: <Widget>[
-          Positioned(
-            top: size.height * 0.08,
-            child: Container(
-              width: size.width,
-              alignment: Alignment.center,
-              child: Text(
-                _gasStatus ?? 'aucune valeur',
-                style: TextStyle(
-                  fontSize: 30,
-                  color: _appBarColor,
-                ),
-              ),
-            ),
-          ),
-          Center(
-            child: FlareActor(
-              'assets/TeddyFork.flr',
-              alignment: Alignment.center,
-              animation: _animationName ?? 'idle',
-              fit: BoxFit.contain,
-              callback: (string) {
-                if (string == 'success') {
-                  setState(() {
-                    _animationName = 'idle';
-                  });
-                }
-              },
-            ),
-          ),
-        ],
+      body: FlareActor(
+        'assets/TeddyFork.flr',
+        alignment: Alignment.center,
+        animation: _animationName ?? 'idle',
+        fit: BoxFit.contain,
+        callback: (string) {
+          if (string == 'success') {
+            setState(() {
+              _animationName = 'idle';
+            });
+          }
+        },
       ),
     );
   }
