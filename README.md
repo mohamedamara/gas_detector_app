@@ -8,7 +8,6 @@ The animation used in this project from [Flare](https://www.2dimensions.com/abou
 
 ## Screenshot
 
-<img src="screenshot/gas_detector_app.gif" width="307" height="512" >
 
 ## Getting Started
 
