@@ -6,4 +6,6 @@ NodeMCU project can be found [HERE](https://github.com/mohamedamara/gas_detector
 
 The animation used in this project from [Flare](https://www.2dimensions.com/about-flare)
 
-## Screenshot
+## video
+
+[youtube video link](https://youtu.be/l7PYE8kHnkk)
