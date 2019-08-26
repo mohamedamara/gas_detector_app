@@ -8,4 +8,4 @@ The animation used in this project from [Flare](https://www.2dimensions.com/abou
 
 ## video
 
-[youtube video link](https://youtu.be/l7PYE8kHnkk)
+[Youtube video link](https://youtu.be/l7PYE8kHnkk)
